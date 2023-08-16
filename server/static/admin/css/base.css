@@ -17,6 +17,10 @@ body {
     background: #fff;
 }
 
+footer {
+    margin-top: auto;
+}
+
 /* LINKS */
 
 a:link, a:visited {
