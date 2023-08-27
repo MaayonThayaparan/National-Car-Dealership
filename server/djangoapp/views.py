@@ -109,10 +109,30 @@ def get_dealer_details(request,dealer_id):
         reviews = get_dealer_reviews_from_cf(url, dealer_id)
         # Concat all dealer's short name
         dealer_reviews = ' '.join([rev.review for rev in reviews])
+        dealer_sentiments = ' '.join([rev.sentiment for rev in reviews])
         # Return a list of dealer short name
-        return HttpResponse(dealer_reviews)
+        return HttpResponse(dealer_reviews + dealer_sentiments)
 
 # Create a `add_review` view to submit a review
-# def add_review(request, dealer_id):
 # ...
+def add_review(request, dealer_id):
+    if request.user.is_authenticated:
+        url = "https://us-east.functions.appdomain.cloud/api/v1/web/bf04fca2-7896-4254-9996-ca1dcf1b7359/dealership-package/post-review"
+        review = {
+        "id": 333,
+        "name": "Charles Oliveria",
+        "dealership": 15,
+        "review": "Not great!",
+        "purchase": "false",
+        "another": "field",
+        "purchase_date": "02/16/2021",
+        "car_make": "Audi",
+        "car_model": "Car",
+        "car_year": 2021
+        }   
+        json_payload = {}
+        json_payload["review"] = review
+        post_request(url, json_payload, id=dealer_id)
+        return HttpResponse(review)
+
 
