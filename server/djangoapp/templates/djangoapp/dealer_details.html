@@ -16,7 +16,7 @@
     <div class="card-columns container-fluid">
         <!-- Loops through review_list from context -->
         {% for review in review_list %}
-        <div class="card">
+        <div class="card" >
             <!-- Conditionally shows different emoji based on NLU sentiment -->
             {% if review.sentiment == "positive" %}
             <img class="card-img-left" style="max-width:7%;" src="{{MEDIA_URL}}/emoji/positive.png"></img>
@@ -27,9 +27,9 @@
             {% endif %}     
             <!-- Display card contents: Make, Model, Year, Review -->
             <div class="card-body">
-                <label class="card-title">{{review.car_make}} , {{review.car_model}}</label>
-                <label class="card-title">{{review.car_year}}</label>
-                <label class="card-text">{{review.review}}</label>
+                <h5 class="card-title h1-responsive font-weight-bold">{{review.car_make}}, {{review.car_model}}</h5>
+                <h6 class="card-title h2-responsive font-weight-bold">{{review.car_year}}</h6>
+                <p class="card-text h3-responsive">{{review.review}}</p>
             </div>
         </div>
         {% endfor %}
