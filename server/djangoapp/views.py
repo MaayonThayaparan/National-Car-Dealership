@@ -140,27 +140,29 @@ def add_review(request, dealer_id):
         # Add dealer_name and cars to context to be used in template display
         context["dealer_name"] = dealer_name
         context["cars"] = dealership_cars
+        context["dealer_id"] = dealer_id
         return render(request, 'djangoapp/add_review.html', context)
 
     if request.method == "POST":
-        redirect("djangoapp:dealer_details", dealer_id=dealer_id)
-
-
-    if request.user.is_authenticated:
-        url = "https://us-east.functions.appdomain.cloud/api/v1/web/bf04fca2-7896-4254-9996-ca1dcf1b7359/dealership-package/post-review"
+        post_url = "https://us-east.functions.appdomain.cloud/api/v1/web/bf04fca2-7896-4254-9996-ca1dcf1b7359/dealership-package/post-review"
+        car_id = request.POST["car"]
+        car = CarModel.objects.get(pk=car_id)
         review = {
-        "id": 333,
-        "name": "Charles Oliveria",
-        "dealership": 15,
-        "review": "Not great!",
+        "id": dealer_id,
+        "name": username,
+        "dealership": dealer_id,
+        "review": request.POST["content"],
         "purchase": "false",
-        "another": "field",
-        "purchase_date": "02/16/2021",
-        "car_make": "Audi",
-        "car_model": "Car",
-        "car_year": 2021
-        }   
+        "purchase_date": request.POST["purchasedate"],
+        "car_make": car.make.name,
+        "car_model": car.name,
+        "car_year": car.year
+        }  
+        if "purchasecheck" in request.POST:
+            if request.POST["purchasecheck"] == 'on':
+                review["purchase"] = True 
+
         json_payload = {}
         json_payload["review"] = review
-        post_request(url, json_payload, id=dealer_id)
-        # return HttpResponse(review)
+        post_request(post_url, json_payload, dealer_id=dealer_id)
+        return redirect("djangoapp:dealer_details", dealer_id=dealer_id)

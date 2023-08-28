@@ -18,7 +18,8 @@
         });
     </script>
     <h2 class="h1-responsive font-weight-bold text-center my-4">Add Review for {{dealer_name}}</h2>
-    <form class="p-3">
+    <form class="p-3" action="{% url 'djangoapp:add_review' dealer_id %}" method="POST">
+        {% csrf_token %}
         <label class="h3-responsive font-weight-bold">Add Review Comment</label>
         <textarea class="form-control col-md-6" id="content" name="content" rows="2" required></textarea>    
         <br>
