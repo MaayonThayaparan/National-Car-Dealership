@@ -7,6 +7,17 @@ You must complete all the labs to successfully complete the project.
 
 ## Project Breakdown
 
+This is full stack project that deploys a website which is a central database of dealership reviews across the country. The website allows new and existing customers to look up different branches by state and look at customer reviews of the various branches. Customers are able to create an account and add their review for any of the branches. User management is implemeneted via Django user authentication system. IBMs Watson Natural Language Understanding service is used to determine whether reviews are positive, negative or neutral in tone. The Django admin site is configured for this project to add/remove makes and models of cars across dealerships. 
+
+This is full stack project that utilizes the following:
+- IBM Cloud account
+- Watson Natural Language Understanding (NLU) service
+- IBM Cloud Functions used to manage dealers and reviews
+- IBM Cloudant used as database for dealers and reviews. 
+- Django models and views to manage card model and make
+- Django proxy services and views to integrate dealers, reviews, and cars together. 
+- 
+
 **Prework: Sign up for IBM Cloud account and create a Watson Natural language Understanding service**
 1. Create an IBM cloud account if you don't have one already.
 2. Create an instance of the Natural Language Understanding (NLU) service.
