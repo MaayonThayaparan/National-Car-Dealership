@@ -98,7 +98,7 @@ This is full stack project that utilizes the following:
 
 - If you want to start from scratch, delete the db.sqlite3 file in the project folder.
 - If you are going to change the models, ensure you run the following two commands before restarting the server:
-     - python manage.py makemigrations onlinecourse
+     - python manage.py makemigrations
      - python manage.py migrate
 
 
