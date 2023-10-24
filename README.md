@@ -11,10 +11,17 @@ This is full stack project that deploys a website which is a central database of
 
 This is full stack project that utilizes the following:
 - IBM Cloud account
-- Watson Natural Language Understanding (NLU) service
+- Watson Natural Language Understanding (NLU) service to analyze the sentiment/tone of reviews and display a happy, sad, or neutral review emoji. 
+- IBM Cloudant used as database for dealers and reviews.
+     - Use this endpoint to get all dealers: https://us-east.functions.appdomain.cloud/api/v1/web/bf04fca2-7896-4254-9996-ca1dcf1b7359/dealership-package/get-dealership
+     - Use this endpoint to get dealers in a specific state: https://us-east.functions.appdomain.cloud/api/v1/web/bf04fca2-7896-4254-9996-ca1dcf1b7359/dealership-package/get-dealership?st=TX
+          - Currently this endpoint is looking for dealers in Texas (TX)
+          - change st=TX to another state initials to change the query
+     - Use this endpoint to get reviews fora  specific dealer: https://us-east.functions.appdomain.cloud/api/v1/web/bf04fca2-7896-4254-9996-ca1dcf1b7359/dealership-package/get-review?id=15
+          - Currently this endpoint is looking for reviews for dealer with id=15
+          - change id=15 to another state initials to change the query
 - IBM Cloud Functions used to manage dealers and reviews
-- IBM Cloudant used as database for dealers and reviews. 
-- Django models and views to manage card model and make
+- Django models and views to manage card model and make. These are stores in SQLite. Can be managed in the Django admin site. 
 - Django proxy services and views to integrate dealers, reviews, and cars together. 
 - 
 
