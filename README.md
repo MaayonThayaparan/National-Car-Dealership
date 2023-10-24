@@ -74,7 +74,7 @@ This is full stack project that utilizes the following:
      - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/ccce69d6-a978-4a9b-8473-d2b0b44fa5e0)
 
 - Authorized user, you can do the following:
-     - Go to a dealer and will now have access to the 'Add Review' button
+     - Go to a dealer and you will now have access to the 'Add Review' button
      - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/2dea4a39-374f-4c81-901e-fb9c85ee75fa)
      - Fill out review fields and click 'Submit'. (this will post to the review database)
      - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/dc92f8a8-8f43-4208-a978-4944fdac3f3f)
