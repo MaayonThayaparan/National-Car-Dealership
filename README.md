@@ -44,7 +44,7 @@ This is full stack project that utilizes the following:
   
 ### Executing the Program
 - Open terminal
-- Navigate to the project folder
+- Navigate to the project folder then open the server folder
 - Run the following commands:
      - python -m pip install -U -r requirements.txt
      - python manage.py makemigrations
