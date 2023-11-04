@@ -56,30 +56,30 @@ This is full stack project that utilizes the following:
 
 - Without being logged in, you can do the following:
      - View 'About Us' page
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/204ea253-14b0-4743-b8be-28b593ee0520)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/204ea253-14b0-4743-b8be-28b593ee0520)
      - View 'Contact Us' page
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/50746a1c-5dce-4457-a7fa-6fc9b9c69ed9)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/50746a1c-5dce-4457-a7fa-6fc9b9c69ed9)
      - View all dealers
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/7d6abb7b-2203-49cf-a8c9-e0dee4c5f069)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/7d6abb7b-2203-49cf-a8c9-e0dee4c5f069)
      - Filter dealers by State
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/824f6725-4e00-4f1f-9a1c-185b6a7fe71a)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/824f6725-4e00-4f1f-9a1c-185b6a7fe71a)
      - Click on dealer to view reviews. NLU will display an emoji after analyzing the review tone. (NOTE: Alot of dealers don't have much data, look at 'Tempsoft Car Dealership' as I have populated data)
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/effab6b2-36b7-4c26-9e1f-36daacbb2ef5)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/effab6b2-36b7-4c26-9e1f-36daacbb2ef5)
  
 - Sign Up as new user.
      - Click the 'Sign Up' button in the top right.
      - Input values for all fields and click 'Sign Up'
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/a01e3423-0972-492f-8cff-a3535dce074f)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/a01e3423-0972-492f-8cff-a3535dce074f)
      - You are now signed in. You can logout by clicking the 'Logout' button.
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/ccce69d6-a978-4a9b-8473-d2b0b44fa5e0)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/ccce69d6-a978-4a9b-8473-d2b0b44fa5e0)
 
 - Authorized user, you can do the following:
      - Go to a dealer and you will now have access to the 'Add Review' button
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/2dea4a39-374f-4c81-901e-fb9c85ee75fa)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/2dea4a39-374f-4c81-901e-fb9c85ee75fa)
      - Fill out review fields and click 'Submit'. (this will post to the review database)
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/dc92f8a8-8f43-4208-a978-4944fdac3f3f)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/dc92f8a8-8f43-4208-a978-4944fdac3f3f)
      - You will see the review added to the dealer page, and NLU will do the tone analysis
-     - ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/a39672f1-aea9-4f2e-afd1-576d299da493)
+       ![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/a39672f1-aea9-4f2e-afd1-576d299da493)
 
 
 ### Customize the Webpage
