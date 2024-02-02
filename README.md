@@ -19,6 +19,9 @@ This is full stack project that utilizes the following:
 - Django models and views to manage car model and make for different dealerships. These are stores in SQLite. Can be managed in the Django admin site. 
 - Django proxy services and views to integrate dealers, reviews, and cars together.
 
+![image](https://github.com/MaayonThayaparan/National-Car-Dealership/assets/43158629/0834dba8-df40-4752-95ab-fa045714daa6)
+
+
 ## Getting Started
 
 ### Dependencies
